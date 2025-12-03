@@ -1,0 +1,42 @@
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-semibold);
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Important for Link */
+}
+
+.back-button:hover {
+  border-color: rgba(240, 115, 0, 0.3);
+  color: #F07300;
+  transform: translateX(-4px);
+}
+
+.back-btn {
+  display: inline-block; /* Important for Link */
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #F07300 0%, #ff8c42 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-semibold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Important for Link */
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(240, 115, 0, 0.3);
+}
