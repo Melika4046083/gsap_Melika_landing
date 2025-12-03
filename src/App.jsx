@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import News from './pages/News';
 import PostDetail from './pages/PostDetail';
-import Events from './pages/Events';
-import Blog from './pages/Blog';
 
 function App() {
   return (
