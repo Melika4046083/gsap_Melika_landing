@@ -1,11 +1,22 @@
-import NavBar from "./Components/NavBar"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import News from './pages/News';
+import PostDetail from './pages/PostDetail';
+import Events from './pages/Events';
+import Blog from './pages/Blog';
 
-const App = () => {
-    return(
-        <main>
-            <NavBar />
-        </main>
-    )
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/news" element={<News />} />
+        <Route path="/news/:slug" element={<PostDetail />} />
+        
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/:slug" element={<PostDetail />} />
+        
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<PostDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
